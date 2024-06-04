@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>現在時刻</title>
+</head>
+<body>
+    <h1 id="now">こんにちは。</h1>
+    <button id="changeButton">現在時刻表示</button>
+
+    <script>
+        document.getElementById("changeButton").addEventListener('click', function() {
+            document.getElementById("now").textContent = new Date();
+        })
+    </script>
+   
+</body>
+</html>
